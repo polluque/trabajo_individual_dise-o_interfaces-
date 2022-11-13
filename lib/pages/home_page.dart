@@ -3,10 +3,12 @@ import 'package:flutter/material.dart';
 /*
 import 'package:flutter_application_7_navigation_24_10_2022/pages/alert_page.dart';
 import 'package:flutter_application_7_navigation_24_10_2022/pages/avatar_page.dart';
-import 'package:flutter_application_7_navigation_24_10_2022/pages/card_page.dart';
-import 'package:google_fonts/google_fonts.dart';
-*/
 
+import 'package:flutter_application_7_navigation_24_10_2022/pages/card_page.dart';
+*/
+import 'package:google_fonts/google_fonts.dart';
+import'package:trabajo_individual_interfaces/pages/dise_2.dart';
+import'package:trabajo_individual_interfaces/pages/dise_1.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -48,14 +50,11 @@ class HomePage extends StatelessWidget {
               ),
               Text(
                 'Diseños',
-                
-                //ojo
-
-                /*style: GoogleFonts.poppins(
+                style: GoogleFonts.poppins(
                   fontSize: 22.0,
                   letterSpacing: 1,
                   //fontWeight: FontWeight.bold,
-                ),*/
+                ),
                         /////////////////////////
               ),
               SizedBox(
@@ -67,31 +66,23 @@ class HomePage extends StatelessWidget {
                 height: 15.0,
               ),
               //invocando al conteiner de la segunda clase 
-              /*
-              ItemComponentWidget(
-                title: 'Paul', 
-                toPage: AvatarPage(),
-                ),
-
-              const SizedBox(
-                height: 15.0,
-              ),
-              
-              ItemComponentWidget(
-                title: 'alert', 
-                toPage: AlertPage(),
+            ItemComponentWidget(
+                title: 'Diseño_1', 
+                toPage: dise_1(),
                 ),
 
               const SizedBox(
                 height: 15.0,
               ),
 
-              ItemComponentWidget(
-                title: 'card', 
-                toPage: CardPage(),
+                ItemComponentWidget(
+                title: 'Diseño_2', 
+                toPage: dise_2(),
                 ),
-                 */
 
+              const SizedBox(
+                height: 15.0,
+              ),
             ],
               ),
         )
@@ -131,7 +122,7 @@ class ItemComponentWidget extends StatelessWidget {
                   Icons.check_circle_outline,
                   color: Colors.black,
                 ),
-                /*
+        
                 title: Text(
                   title,
                   style: GoogleFonts.poppins(),
@@ -140,7 +131,7 @@ class ItemComponentWidget extends StatelessWidget {
                   'ir al detalle de $title',
                   style: GoogleFonts.poppins(),
                 ),
-                */
+                
                 trailing: Icon(
                   Icons.chevron_right,
                 ),
